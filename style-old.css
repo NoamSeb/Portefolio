@@ -1,0 +1,286 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    border: none;
+    margin: 0;
+    background-color: #111111;
+    scroll-behavior: smooth;
+}
+
+#preloader {
+    background: #000 url(medias/NS_loader.mp4) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    color: white;
+    background-color: #111111;
+    width: 100vw;
+    height: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 20%;
+    text-align: center;
+    margin: 1px;
+}
+
+.menu {
+    margin-top: 5vh;
+    width: 70%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar {
+    text-decoration: none;
+    color: white;
+}
+
+.navBar:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+.ariane {
+    color: white;
+}
+
+.arianePass {
+    color: lightgrey;
+}
+
+.fixed-parallax .image {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+}
+
+.fixed-parallax .one {
+    background-image: url("medias/federico-di-dio-photography-Ovz3oM-95rE-unsplash.jpeg");
+    /* image à changer pour cause de droit d'auteur */
+}
+
+.has-lines {
+    color: white;
+    margin-top: 2%;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.has-lines::before,
+.has-lines::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.has-lines::before {
+    margin-right: 1%;
+}
+
+.has-lines::after {
+    margin-left: 1%;
+}
+
+.about {
+    display: flex;
+}
+
+.seeMore {
+    text-decoration: none;
+    color: white;
+}
+
+.seeMore:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+.img {
+    width: 30vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    width: 50vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 2vw;
+    background-color: #232323;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 20px;
+}
+
+.text p {
+    max-width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dev {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.mediaDev {
+    width: 50vw;
+    margin-right: 0vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.textDev {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.video {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.mediaVid {
+    width: 50vw;
+    margin-right: 0vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.textVid {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Page Project.html */
+
+.card {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    border: solid red 1px;
+}
+
+.imgCover {
+    background-color: #000;
+    z-index: 1;
+    opacity: 1;
+}
+
+main .navProject {
+    width: 25vw;
+    height: 50vh;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+main .navProject:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+main .navProject img {
+    margin-top: 20vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* style page projet */
+
+.projets {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.descProject {
+    width: 100%;
+    display: flex;
+    border: solid 1px white;
+    padding: 1%;
+    margin-top: 10vh;
+}
+
+.imgProjet {
+    width: 30%;
+}
+
+.imgProjet img {
+    width: 100%;
+    margin: 1%;
+}
+
+.txtProjet {
+    width: 70%;
+    color: #fff;
+    margin-left: 2%;
+    max-width: 60%;
+}
+
+.txtProjet a {
+    text-decoration: none;
+    color: white;
+}
+
+.txtProjet a:hover {
+    color: beige;
+    text-decoration: underline;
+}

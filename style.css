@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+/* style navigation */
+
+.navHome {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    background-color: none;
+    padding: 1vw;
+}
+
+.navHome img {
+    width: 5vw;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    color: white;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.toMentions {
+    color: white;
+    position: absolute;
+    z-index: 11;
+    right: 5px;
+    bottom: 5px;
+}
+
+.toMentions a {
+    color: white;
+    text-decoration: none;
+}
+
+.toMentions a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 30px;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fade {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.705) 36%, rgba(0, 0, 0, 0) 100%);
+}
+
+.mentions {
+    color: white;
+    max-width: 60%;
+    display: none;
+}
+
+.mentions p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+/* Page Projet */
+
+.navProject {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: none;
+    padding: 1vw;
+}
+
+.navProject img {
+    width: 5vw;
+    height: auto;
+}
+
+.navProject .navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navProject ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.domaine {
+    color: white;
+}
+
+.domaine ul {
+    display: flex;
+}
+
+.domaine ul li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.webLink {
+    opacity: 1;
+}
+
+.webLink:hover {
+    cursor: pointer;
+}
+
+.AudVisLink {
+    opacity: 0.5;
+}
+
+.AudVisLink:hover {
+    cursor: pointer;
+}
+
+.comLink {
+    opacity: 0.5;
+}
+
+.comLink:hover {
+    cursor: pointer;
+}
+
+.web {
+    display: block;
+}
+
+.AudVis {
+    display: none;
+}
+
+.com {
+    display: none;
+}
+
+.projets {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.descProject {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    margin-top: 10vh;
+}
+
+.imgProjet {
+    width: 30%;
+}
+
+.imgProjet img {
+    width: 100%;
+    margin: 1%;
+    border-radius: 10px
+}
+
+.txtProjet {
+    width: 70%;
+    color: #fff;
+    margin-left: 2%;
+    max-width: 60%;
+}
+
+.txtProjet a {
+    text-decoration: none;
+    color: white;
+}
+
+.txtProjet a:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+
+/* Page de projet */
+
+.imageTitle {
+    width: 100vw;
+    height: 40vh;
+}
+
+.imageTitle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageTitle .title {
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.imageTitle .title h1 {
+    text-align: center;
+    transform: translateX(-50%), translateY(-50%);
+    margin-top: 15vh;
+}
+
+.mainProjet {
+    margin-top: 50vh;
+}
+
+
+/* page about */
+
+.navAbout {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: none;
+    padding: 1vw;
+}
+
+.navAbout img {
+    width: 5vw;
+    height: auto;
+}
+
+.navAbout .navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navAbout ul li a {
+    color: white;
+    text-decoration: none;
+}
