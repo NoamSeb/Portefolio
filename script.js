@@ -8,6 +8,7 @@ const comProjects = document.querySelector('.com');
 
 const linkMentions = document.querySelector('.toMentions');
 const mentions = document.querySelector('.mentions');
+const openMentions = document.querySelector(".openMentions");
 
 linkMentions.addEventListener("click", () => {
     mentions.style.display = "block";
@@ -27,7 +28,7 @@ lienAudVis.addEventListener('click', () => {
     lienWeb.style.opacity = "0.5";
     audVisProjects.style.display = "block";
     lienAudVis.style.opacity = "1";
-    comProjects.style.display = "block";
+    comProjects.style.display = "none";
     lienCom.style.opacity = "0.5";
 });
 
