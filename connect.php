@@ -1,1 +1,1 @@
-<?php $db=new PDO('mysql:host=localhost;dbname=Portfolio;port:3306','root','root'); ?>
+<?php $db=new PDO('mysql:host=localhost;dbname=Portfolio;port:3306','root','root'); 

@@ -18,9 +18,17 @@ body {
 
 /* style navigation */
 
+.preloader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
 .navHome {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     z-index: 100;
     width: 100vw;
@@ -46,6 +54,32 @@ nav li {
 .navLink {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navLink:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.ariane {
+    color: white;
+    margin-left: 1vw;
+}
+
+.arianePass {
+    text-decoration: none;
+    color: #666666;
+}
+
+.linkAriane {
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.linkAriane:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -74,11 +108,16 @@ nav li {
 .toMentions a {
     color: white;
     text-decoration: none;
+    font-size: 0.7rem;
 }
 
 .toMentions a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.linkMailMention {
+    color: white
 }
 
 .title {
@@ -88,6 +127,7 @@ nav li {
 video {
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
 }
 
 .fade {
@@ -143,15 +183,10 @@ video {
 
 .domaine {
     color: white;
-}
-
-.domaine ul {
+    margin-left: 2vw;
+    width: 20vw;
     display: flex;
-}
-
-.domaine ul li {
-    margin-left: 10px;
-    list-style-type: none;
+    justify-content: space-around;
 }
 
 .webLink {
@@ -262,7 +297,96 @@ video {
 }
 
 .mainProjet {
-    margin-top: 50vh;
+    display: flex;
+    margin-top: 5vh;
+}
+
+.specTechnique {
+    width: 30vw;
+    margin-left: 1vw;
+}
+
+.icon {
+    width: 8vw;
+}
+
+.ligneVertical {
+    border-left: 5px solid white;
+    height: 50vh;
+    display: block;
+}
+
+.ligneHorizontal {
+    border-top: 5px solid white;
+    width: 50vw;
+    display: none;
+}
+
+.descProjFull {
+    color: white;
+    max-width: 50vw;
+    margin-left: 5vw;
+}
+
+.descProjFull a {
+    color: white;
+}
+
+.seeProject {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 2vw;
+    width: fit-content;
+    margin: auto;
+    transform: scale(1);
+    transition-duration: 0.5s;
+    transition-property: background-color, color, border, transform;
+}
+
+.seeProject:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-property: background-color, color, border, transform;
+}
+
+.linkToProject {
+    text-decoration: none;
+}
+
+.seeSocial {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2vw;
+    width: fit-content;
+    margin: auto;
+    transform: scale(1);
+    transition-duration: 0.5s;
+    transition-property: background-color, color, border, transform;
+}
+
+.seeSocial:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-property: background-color, color, border, transform;
+}
+
+.linkToSocial {
+    text-decoration: none;
+}
+
+footer {
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -289,4 +413,160 @@ video {
 .navAbout ul li a {
     color: white;
     text-decoration: none;
+}
+
+.firstLook {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin-top: 10vw;
+}
+
+.name {
+    color: white;
+}
+
+.name p {
+    color: white;
+    font-size: 5rem;
+    mix-blend-mode: exclusion;
+}
+
+.image img {
+    width: 35vw;
+    position: absolute;
+}
+
+.titleSection {
+    text-align: center;
+    font-size: 3rem;
+    font-style: bold;
+    color: white;
+}
+
+.career {
+    margin-top: 20vw;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact {
+    margin-top: 20vw;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.contactIcon {
+    width: 5vw;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.contactIcon:hover {
+    transform: scale(1.5);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width:950px) {
+    .domaine {
+        width: 40vw;
+        margin: auto;
+    }
+    .firstLook {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10vw;
+    }
+    .image img {
+        width: 40vw;
+    }
+    .career {
+        margin-top: 30vw;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .navHome img {
+        width: 6vw;
+        height: auto;
+    }
+    .navProject img {
+        width: 6vw;
+        height: auto;
+    }
+    .navAbout img {
+        width: 6vw;
+        height: auto;
+    }
+    .projets {
+        margin: auto;
+    }
+    .descProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mainProjet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .specTechnique {
+        display: flex;
+        width: 70vw;
+        justify-content: space-around;
+    }
+    .ligneVertical {
+        display: none;
+    }
+    .ligneHorizontal {
+        margin-top: 10vw;
+        display: block;
+    }
+    .descProjFull {
+        margin-top: 10vw;
+        width: 70vw;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .navHome img {
+        width: 8vw;
+        height: auto;
+    }
+    .navProject img {
+        width: 8vw;
+        height: auto;
+    }
+    .navAbout img {
+        width: 8vw;
+        height: auto;
+    }
+    .domaine {
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+    }
+    .name p {
+        font-size: 4rem;
+    }
+    .image img {
+        position: relative;
+        width: 60vw;
+    }
+    .titleSection {
+        font-size: 2rem;
+    }
+    .career {
+        font-size: 1rem;
+    }
 }

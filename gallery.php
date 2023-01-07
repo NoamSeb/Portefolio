@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="medias/NS_Logo.svg">
     <?php
     include('connect.php');
@@ -22,6 +23,11 @@
     $stmt = $db->query($requete);
     $resultA = $stmt->fetchall(PDO::FETCH_ASSOC);
     ?>
+    
+    <meta name="twitter:card" content="La domotique c'est fantastique"></meta>
+    <link rel="canonical" href="http://noamsebahoun.fr">
+    <meta name="description" content="Découvrez mon univers ainsi que mes différents travaux dans différents domaine grâce à ce portfolio qui vous donneront un avant goût de ce l'on peux faire une fois que nous sommes poussé par la passion.">
+    <meta name="keywords" content="portfolio, études, communication, audiovisuel, web, developpeur, technologie, informatique">
 
 </head>
 
@@ -29,17 +35,19 @@
     <nav class="navProject">
         <a href="index.html"><img src="medias/NS_Logo.svg" alt="retour à l'acceuil"></a>
         <ul>
-            <li><a href="gallery.php">Project</a></li>
-            <li><a href="aboutMe.html">About me</a></li>
+            <li><a href="gallery.php" class="navLink">Projets</a></li>
+            <li><a href="aboutMe.html" class="navLink">A propos</a></li>
         </ul>
     </nav>
     <main>
-        <p class="domaine">
+        <p class="ariane"><span class="arianePass"> <a href="index.html" class="linkAriane">Accueil </a>/ </span>Projet</p>
+
+        <p class="domaine" data-aos="fade-left" data-aos-duration="1000">
             <span class="webLink">Web</span>
             <span class="AudVisLink">Audiovisuel</span>
             <span class="comLink">Communication</span>
         </p>
-        <div class="project">
+        <div class="project" data-aos="fade-up" data-aos-duration="1000">
             <div class="web">
                 <?php foreach ($resultW as $rW) { ?>
                     <div class="descProject">
@@ -94,6 +102,7 @@
         </div>
     </main>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
 
 </html>
